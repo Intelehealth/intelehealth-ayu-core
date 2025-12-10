@@ -1,6 +1,6 @@
-# @intelehealth/intelehealth-fhw-react-core
+# @intelehealth/intelehealth-ayu-core
 
-[![npm version](https://badge.fury.io/js/%40intelehealth%2Fintelehealth-fhw-react-core.svg)](https://www.npmjs.com/package/@intelehealth/intelehealth-fhw-react-core)
+[![npm version](https://badge.fury.io/js/%40intelehealth%2Fintelehealth-ayu-core.svg)](https://www.npmjs.com/package/@intelehealth/intelehealth-ayu-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.0+-61dafb.svg)](https://reactjs.org/)
@@ -49,19 +49,19 @@ Intelehealth's core library for React.js and React Native applications. A compre
 ### NPM
 
 ```bash
-npm install @intelehealth/intelehealth-fhw-react-core
+npm install @intelehealth/intelehealth-ayu-core
 ```
 
 ### Yarn
 
 ```bash
-yarn add @intelehealth/intelehealth-fhw-react-core
+yarn add @intelehealth/intelehealth-ayu-core
 ```
 
 ### PNPM
 
 ```bash
-pnpm add @intelehealth/intelehealth-fhw-react-core
+pnpm add @intelehealth/intelehealth-ayu-core
 ```
 
 ### Requirements
@@ -99,7 +99,7 @@ import {
   AuthService,
   useLocalStorage,
   useDebounce,
-} from '@intelehealth/intelehealth-fhw-react-core';
+} from '@intelehealth/intelehealth-ayu-core';
 
 // useLocalStorage works in React web apps
 const [value, setValue] = useLocalStorage('key', 'default');
@@ -113,7 +113,7 @@ import {
   ApiService,
   AuthService,
   useDebounce,
-} from '@intelehealth/intelehealth-fhw-react-core';
+} from '@intelehealth/intelehealth-ayu-core';
 
 // useLocalStorage is not available in React Native
 // Use the Storage class instead for persistent storage
@@ -129,7 +129,7 @@ import {
   Storage,
   ApiService,
   AuthService,
-} from '@intelehealth/intelehealth-fhw-react-core';
+} from '@intelehealth/intelehealth-ayu-core';
 
 // Use the Storage utility
 const storage = new Storage('app_');
@@ -148,23 +148,20 @@ await auth.login({ email: 'user@example.com', password: 'password' });
 
 ```typescript
 // Import only what you need from specific folders
-import {
-  Storage,
-  appStorage,
-} from '@intelehealth/intelehealth-fhw-react-core/core';
-import { ApiService } from '@intelehealth/intelehealth-fhw-react-core/services';
+import { Storage, appStorage } from '@intelehealth/intelehealth-ayu-core/core';
+import { ApiService } from '@intelehealth/intelehealth-ayu-core/services';
 import {
   useLocalStorage,
   useDebounce,
-} from '@intelehealth/intelehealth-fhw-react-core/hooks';
+} from '@intelehealth/intelehealth-ayu-core/hooks';
 import {
   formatDate,
   deepClone,
-} from '@intelehealth/intelehealth-fhw-react-core/utils';
+} from '@intelehealth/intelehealth-ayu-core/utils';
 import type {
   ApiResponse,
   User,
-} from '@intelehealth/intelehealth-fhw-react-core/types';
+} from '@intelehealth/intelehealth-ayu-core/types';
 ```
 
 ## 📚 API Documentation
@@ -174,7 +171,7 @@ import type {
 A platform-agnostic storage utility that works with both React and React Native.
 
 ```typescript
-import { Storage } from '@intelehealth/intelehealth-fhw-react-core';
+import { Storage } from '@intelehealth/intelehealth-ayu-core';
 
 const storage = new Storage('app_');
 
@@ -196,7 +193,7 @@ await storage.clear();
 HTTP client with retry logic and error handling.
 
 ```typescript
-import { ApiService } from '@intelehealth/intelehealth-fhw-react-core';
+import { ApiService } from '@intelehealth/intelehealth-ayu-core';
 
 const api = new ApiService({
   baseURL: 'https://api.example.com',
@@ -225,7 +222,7 @@ await api.delete('/users/1');
 Authentication state management.
 
 ```typescript
-import { AuthService } from '@intelehealth/intelehealth-fhw-react-core';
+import { AuthService } from '@intelehealth/intelehealth-ayu-core';
 
 const auth = new AuthService();
 
@@ -247,7 +244,7 @@ await auth.logout();
 #### useLocalStorage (React only)
 
 ```typescript
-import { useLocalStorage } from '@intelehealth/intelehealth-fhw-react-core';
+import { useLocalStorage } from '@intelehealth/intelehealth-ayu-core';
 
 function MyComponent() {
   const [value, setValue] = useLocalStorage('key', 'defaultValue');
@@ -266,7 +263,7 @@ function MyComponent() {
 #### useDebounce
 
 ```typescript
-import { useDebounce } from '@intelehealth/intelehealth-fhw-react-core';
+import { useDebounce } from '@intelehealth/intelehealth-ayu-core';
 
 function SearchComponent() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -297,7 +294,7 @@ import {
   deepClone,
   capitalize,
   generateId,
-} from '@intelehealth/intelehealth-fhw-react-core/utils';
+} from '@intelehealth/intelehealth-ayu-core/utils';
 
 // Date utilities
 const formattedDate = formatDate(new Date(), 'YYYY-MM-DD');
@@ -357,9 +354,9 @@ npm install react react-native
 
 ### Getting Help
 
-- 📖 **Documentation**: Check our [full API docs](https://github.com/intelehealth/intelehealth-fhw-react-core#readme)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/intelehealth/intelehealth-fhw-react-core/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/intelehealth/intelehealth-fhw-react-core/discussions)
+- 📖 **Documentation**: Check our [full API docs](https://github.com/intelehealth/intelehealth-ayu-core#readme)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/intelehealth/intelehealth-ayu-core/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/intelehealth/intelehealth-ayu-core/discussions)
 - 📧 **Email Support**: info@intelehealth.org
 
 ## 📄 License
@@ -368,7 +365,7 @@ MIT License - see [LICENSE](./LICENSE) file for details.
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/intelehealth/intelehealth-fhw-react-core)
-- [NPM Package](https://www.npmjs.com/package/@intelehealth/intelehealth-fhw-react-core)
-- [Documentation](https://github.com/intelehealth/intelehealth-fhw-react-core#readme)
-- [Changelog](https://github.com/intelehealth/intelehealth-fhw-react-core/releases)
+- [GitHub Repository](https://github.com/intelehealth/intelehealth-ayu-core)
+- [NPM Package](https://www.npmjs.com/package/@intelehealth/intelehealth-ayu-core)
+- [Documentation](https://github.com/intelehealth/intelehealth-ayu-core#readme)
+- [Changelog](https://github.com/intelehealth/intelehealth-ayu-core/releases)

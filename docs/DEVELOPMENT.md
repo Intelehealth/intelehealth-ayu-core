@@ -1,6 +1,6 @@
 # Development Guide
 
-This guide covers the development workflow and best practices for working with the intelehealth-fhw-react-core library.
+This guide covers the development workflow and best practices for working with the intelehealth-ayu-core library.
 
 ## Development Environment Setup
 
@@ -17,7 +17,7 @@ This guide covers the development workflow and best practices for working with t
 
    ```bash
    git clone <your-repo-url>
-   cd intelehealth-fhw-react-core
+   cd intelehealth-ayu-core
    yarn install
    ```
 
@@ -31,7 +31,7 @@ This will start the build process in watch mode, automatically rebuilding when y
 ## Project Structure
 
 ```
-intelehealth-fhw-react-core/
+intelehealth-ayu-core/
 ├── src/                    # Source code
 │   ├── core/              # Core utilities (Storage)
 │   │   ├── Storage.ts     # Storage implementation
@@ -237,7 +237,7 @@ yarn clean && yarn build
 ```bash
 # Test the built package locally
 npm pack
-yarn add ./intelehealth-fhw-react-core-1.0.0.tgz
+yarn add ./intelehealth-ayu-core-1.0.0.tgz
 ```
 
 ## Core Development Concepts
@@ -250,11 +250,11 @@ The library supports both full imports and folder-wise imports for optimal perfo
 
 ```typescript
 // Import only what you need - better tree-shaking
-import { Storage } from '@intelehealth/intelehealth-fhw-react-core/core';
-import { ApiService } from '@intelehealth/intelehealth-fhw-react-core/services';
-import { useLocalStorage } from '@intelehealth/intelehealth-fhw-react-core/hooks';
-import { formatDate } from '@intelehealth/intelehealth-fhw-react-core/utils';
-import type { ApiResponse } from '@intelehealth/intelehealth-fhw-react-core/types';
+import { Storage } from '@intelehealth/intelehealth-ayu-core/core';
+import { ApiService } from '@intelehealth/intelehealth-ayu-core/services';
+import { useLocalStorage } from '@intelehealth/intelehealth-ayu-core/hooks';
+import { formatDate } from '@intelehealth/intelehealth-ayu-core/utils';
+import type { ApiResponse } from '@intelehealth/intelehealth-ayu-core/types';
 ```
 
 #### Full Imports (Convenience)
@@ -266,8 +266,8 @@ import {
   ApiService,
   useLocalStorage,
   formatDate,
-} from '@intelehealth/intelehealth-fhw-react-core';
-import type { ApiResponse } from '@intelehealth/intelehealth-fhw-react-core';
+} from '@intelehealth/intelehealth-ayu-core';
+import type { ApiResponse } from '@intelehealth/intelehealth-ayu-core';
 ```
 
 #### Bundle Size Comparison

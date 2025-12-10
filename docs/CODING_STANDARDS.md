@@ -1,6 +1,6 @@
 # Coding Standards & Best Practices
 
-This document outlines the coding standards and best practices for the intelehealth-fhw-react-core project.
+This document outlines the coding standards and best practices for the intelehealth-ayu-core project.
 
 ## 📋 Table of Contents
 
@@ -260,11 +260,11 @@ export default ApiService;
 
 ```typescript
 // ✅ Good - Import only what you need
-import { Storage } from '@intelehealth/intelehealth-fhw-react-core/core';
-import { ApiService } from '@intelehealth/intelehealth-fhw-react-core/services';
-import { useLocalStorage } from '@intelehealth/intelehealth-fhw-react-core/hooks';
-import { formatDate } from '@intelehealth/intelehealth-fhw-react-core/utils';
-import type { ApiResponse } from '@intelehealth/intelehealth-fhw-react-core/types';
+import { Storage } from '@intelehealth/intelehealth-ayu-core/core';
+import { ApiService } from '@intelehealth/intelehealth-ayu-core/services';
+import { useLocalStorage } from '@intelehealth/intelehealth-ayu-core/hooks';
+import { formatDate } from '@intelehealth/intelehealth-ayu-core/utils';
+import type { ApiResponse } from '@intelehealth/intelehealth-ayu-core/types';
 ```
 
 #### Full Imports (Convenience)
@@ -276,8 +276,8 @@ import {
   ApiService,
   useLocalStorage,
   formatDate,
-} from '@intelehealth/intelehealth-fhw-react-core';
-import type { ApiResponse } from '@intelehealth/intelehealth-fhw-react-core';
+} from '@intelehealth/intelehealth-ayu-core';
+import type { ApiResponse } from '@intelehealth/intelehealth-ayu-core';
 ```
 
 ## 🎯 Code Quality Rules

@@ -1,6 +1,6 @@
-# @intelehealth/intelehealth-fhw-react-core
+# @intelehealth/intelehealth-ayu-core
 
-[![npm version](https://badge.fury.io/js/%40intelehealth%2Fintelehealth-fhw-react-core.svg)](https://www.npmjs.com/package/@intelehealth/intelehealth-fhw-react-core)
+[![npm version](https://badge.fury.io/js/%40intelehealth%2Fintelehealth-ayu-core.svg)](https://www.npmjs.com/package/@intelehealth/intelehealth-ayu-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.0+-61dafb.svg)](https://reactjs.org/)
@@ -49,19 +49,19 @@ Intelehealth's core library for React.js and React Native applications. A compre
 ### NPM
 
 ```bash
-npm install @intelehealth/intelehealth-fhw-react-core
+npm install @intelehealth/intelehealth-ayu-core
 ```
 
 ### Yarn
 
 ```bash
-yarn add @intelehealth/intelehealth-fhw-react-core
+yarn add @intelehealth/intelehealth-ayu-core
 ```
 
 ### PNPM
 
 ```bash
-pnpm add @intelehealth/intelehealth-fhw-react-core
+pnpm add @intelehealth/intelehealth-ayu-core
 ```
 
 ### Requirements
@@ -99,7 +99,7 @@ import {
   AuthService,
   useLocalStorage,
   useDebounce,
-} from '@intelehealth/intelehealth-fhw-react-core';
+} from '@intelehealth/intelehealth-ayu-core';
 
 // useLocalStorage works in React web apps
 const [value, setValue] = useLocalStorage('key', 'default');
@@ -113,7 +113,7 @@ import {
   ApiService,
   AuthService,
   useDebounce,
-} from '@intelehealth/intelehealth-fhw-react-core';
+} from '@intelehealth/intelehealth-ayu-core';
 
 // useLocalStorage is not available in React Native
 // Use the Storage class instead for persistent storage
@@ -129,7 +129,7 @@ import {
   Storage,
   ApiService,
   AuthService,
-} from '@intelehealth/intelehealth-fhw-react-core';
+} from '@intelehealth/intelehealth-ayu-core';
 
 // Use the Storage utility
 const storage = new Storage('app_');
@@ -148,29 +148,26 @@ await auth.login({ email: 'user@example.com', password: 'password' });
 
 ```typescript
 // Import only what you need from specific folders
-import {
-  Storage,
-  appStorage,
-} from '@intelehealth/intelehealth-fhw-react-core/core';
-import { ApiService } from '@intelehealth/intelehealth-fhw-react-core/services';
+import { Storage, appStorage } from '@intelehealth/intelehealth-ayu-core/core';
+import { ApiService } from '@intelehealth/intelehealth-ayu-core/services';
 import {
   useLocalStorage,
   useDebounce,
-} from '@intelehealth/intelehealth-fhw-react-core/hooks';
+} from '@intelehealth/intelehealth-ayu-core/hooks';
 import {
   formatDate,
   deepClone,
-} from '@intelehealth/intelehealth-fhw-react-core/utils';
+} from '@intelehealth/intelehealth-ayu-core/utils';
 import type {
   ApiResponse,
   User,
-} from '@intelehealth/intelehealth-fhw-react-core/types';
+} from '@intelehealth/intelehealth-ayu-core/types';
 ```
 
 ## 📁 Project Structure
 
 ```
-intelehealth-fhw-react-core/
+intelehealth-ayu-core/
 ├── src/                    # Source code
 │   ├── core/              # Core utilities (Storage)
 │   ├── services/          # Services (ApiService, AuthService)
@@ -195,7 +192,7 @@ intelehealth-fhw-react-core/
 
    ```bash
    git clone <your-repo>
-   cd intelehealth-fhw-react-core
+   cd intelehealth-ayu-core
    yarn install
    yarn prepare         # Initialize Husky git hooks
    ```
@@ -286,7 +283,7 @@ Imports are automatically organized by ESLint in this order:
 This boilerplate creates a package that can be installed via:
 
 ```bash
-yarn add @intelehealth/intelehealth-fhw-react-core
+yarn add @intelehealth/intelehealth-ayu-core
 ```
 
 ## 🌟 GitHub Features
@@ -336,18 +333,18 @@ We welcome contributions! Please follow these guidelines:
 
 ## 🆘 Support & Community
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/intelehealth/intelehealth-fhw-react-core/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/intelehealth/intelehealth-fhw-react-core/discussions)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/intelehealth/intelehealth-ayu-core/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/intelehealth/intelehealth-ayu-core/discussions)
 - 📧 **Email Support**: info@intelehealth.org
 - 📖 **Documentation**: [Full API Docs](./docs/API.md)
 - 💬 **Community**: Join our discussions for help and updates
 
 ## 📊 Stats
 
-![GitHub stars](https://img.shields.io/github/stars/intelehealth/intelehealth-fhw-react-core?style=social)
-![GitHub forks](https://img.shields.io/github/forks/intelehealth/intelehealth-fhw-react-core?style=social)
-![GitHub issues](https://img.shields.io/github/issues/intelehealth/intelehealth-fhw-react-core)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/intelehealth/intelehealth-fhw-react-core)
+![GitHub stars](https://img.shields.io/github/stars/intelehealth/intelehealth-ayu-core?style=social)
+![GitHub forks](https://img.shields.io/github/forks/intelehealth/intelehealth-ayu-core?style=social)
+![GitHub issues](https://img.shields.io/github/issues/intelehealth/intelehealth-ayu-core)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/intelehealth/intelehealth-ayu-core)
 
 ## 📄 License
 

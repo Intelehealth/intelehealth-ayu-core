@@ -1,6 +1,6 @@
 # Setup Guide
 
-This guide will walk you through setting up the intelehealth-fhw-react-core library for your own project.
+This guide will walk you through setting up the intelehealth-ayu-core library for your own project.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 git clone <your-repo-url>
-cd intelehealth-fhw-react-core
+cd intelehealth-ayu-core
 ```
 
 ## Step 2: Install Dependencies
@@ -38,15 +38,15 @@ Edit the `package.json` file to customize it for your project:
 
 ```json
 {
-  "name": "@intelehealth/intelehealth-fhw-react-core",
+  "name": "@intelehealth/intelehealth-ayu-core",
   "version": "1.0.0",
   "description": "Your library description",
   "author": "Your Name <your.email@example.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/intelehealth/intelehealth-fhw-react-core.git"
+    "url": "https://github.com/intelehealth/intelehealth-ayu-core.git"
   },
-  "homepage": "https://github.com/intelehealth/intelehealth-fhw-react-core#readme"
+  "homepage": "https://github.com/intelehealth/intelehealth-ayu-core#readme"
 }
 ```
 
@@ -264,7 +264,7 @@ This method creates a symbolic link between your library and your application, a
 
 #### Step 1: Link the Library
 
-From the `intelehealth-fhw-react-core` directory:
+From the `intelehealth-ayu-core` directory:
 
 ```bash
 # Create a global link to your library
@@ -280,10 +280,10 @@ From your React application directory:
 
 ```bash
 # Link the library to your app
-yarn link @intelehealth/intelehealth-fhw-react-core
+yarn link @intelehealth/intelehealth-ayu-core
 
 # Or if using yarn
-yarn link @intelehealth/intelehealth-fhw-react-core
+yarn link @intelehealth/intelehealth-ayu-core
 ```
 
 #### Step 3: Start Development
@@ -307,7 +307,7 @@ In your React application's `package.json`:
 ```json
 {
   "dependencies": {
-    "@intelehealth/intelehealth-fhw-react-core": "file:../path/to/intelehealth-fhw-react-core"
+    "@intelehealth/intelehealth-ayu-core": "file:../path/to/intelehealth-ayu-core"
   }
 }
 ```
@@ -326,7 +326,7 @@ This method creates a tarball that you can install locally.
 
 #### Step 1: Build and Pack
 
-From the `intelehealth-fhw-react-core` directory:
+From the `intelehealth-ayu-core` directory:
 
 ```bash
 # Build the library
@@ -342,7 +342,7 @@ From your React application directory:
 
 ```bash
 # Install the tarball
-yarn install ../path/to/intelehealth-fhw-react-core/intelehealth-fhw-react-core-1.0.0.tgz
+yarn install ../path/to/intelehealth-ayu-core/intelehealth-ayu-core-1.0.0.tgz
 ```
 
 ## Step 10: Test Integration
@@ -370,7 +370,7 @@ npx react-native run-android  # or run-ios
 1. **Start the library in watch mode**:
 
    ```bash
-   cd intelehealth-fhw-react-core
+   cd intelehealth-ayu-core
    yarn dev
    ```
 
@@ -378,7 +378,7 @@ npx react-native run-android  # or run-ios
 
    ```bash
    cd your-react-app
-   yarn link @intelehealth/intelehealth-fhw-react-core
+   yarn link @intelehealth/intelehealth-ayu-core
    ```
 
 3. **Start your React application**:
@@ -399,7 +399,7 @@ If you encounter React version conflicts:
 2. **Remove React from library's node_modules**:
 
    ```bash
-   cd intelehealth-fhw-react-core
+   cd intelehealth-ayu-core
    rm -rf node_modules
    yarn install --production
    ```
@@ -431,7 +431,7 @@ If you get TypeScript errors:
 1. **Ensure the library is built**:
 
    ```bash
-   cd intelehealth-fhw-react-core
+   cd intelehealth-ayu-core
    yarn build
    ```
 

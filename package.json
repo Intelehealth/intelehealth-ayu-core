@@ -1,7 +1,7 @@
 {
-  "name": "@intelehealth/intelehealth-fhw-react-core",
-  "version": "1.0.0",
-  "description": "Intelehealth FHW React Core",
+  "name": "@intelehealth/ayu-core",
+  "version": "0.0.1",
+  "description": "Intelehealth Ayu Core",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -85,12 +85,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intelehealth/intelehealth-fhw-react-core.git"
+    "url": "git+https://github.com/intelehealth/intelehealth-ayu-core.git"
   },
   "bugs": {
-    "url": "https://github.com/intelehealth/intelehealth-fhw-react-core/issues"
+    "url": "https://github.com/intelehealth/intelehealth-ayu-core/issues"
   },
-  "homepage": "https://github.com/intelehealth/intelehealth-fhw-react-core#readme",
+  "homepage": "https://github.com/intelehealth/intelehealth-ayu-core#readme",
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"

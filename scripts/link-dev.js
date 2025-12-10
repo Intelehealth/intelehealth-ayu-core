@@ -4,14 +4,12 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-console.log(
-  '🔗 Setting up intelehealth-fhw-react-core for local development...'
-);
+console.log('🔗 Setting up intelehealth-ayu-core for local development...');
 
 // Check if we're in the right directory
 if (!fs.existsSync('package.json') || !fs.existsSync('src')) {
   console.error(
-    '❌ Error: Please run this script from the intelehealth-fhw-react-core root directory'
+    '❌ Error: Please run this script from the intelehealth-ayu-core root directory'
   );
   process.exit(1);
 }
@@ -29,16 +27,16 @@ try {
   console.log('');
   console.log('📋 Next steps:');
   console.log('1. Go to your React/React Native app directory');
-  console.log('2. Run: yarn link @intelehealth/intelehealth-fhw-react-core');
+  console.log('2. Run: yarn link @intelehealth/intelehealth-ayu-core');
   console.log('3. Start development:');
   console.log(
-    '   - Library: yarn run dev (in intelehealth-fhw-react-core directory)'
+    '   - Library: yarn run dev (in intelehealth-ayu-core directory)'
   );
   console.log('   - Your app: yarn start (in your app directory)');
   console.log('');
   console.log('🔄 To unlink later:');
   console.log(
-    '   - From your app: yarn unlink @intelehealth/intelehealth-fhw-react-core'
+    '   - From your app: yarn unlink @intelehealth/intelehealth-ayu-core'
   );
   console.log('   - From library: yarn unlink');
 } catch (error) {
