@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setAyuJsonList } from '../../../reducers/ayu.reducer';
-import type { RootState } from '../../../store/store';
+import { setAyuJsonList } from '../../reducers/ayu.reducer';
+import type { RootState } from '../../store/store';
 import { fetchAyuJsonList } from '../services/ayu.service';
 import type { AyuJsonItem } from '../../ayu-library/types/ayu-json.types';
 import { safeJsonParse } from '../../ayu-library/utils/json.utils';
